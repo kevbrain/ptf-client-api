@@ -11,7 +11,7 @@
   <groupId>com.its4u</groupId>
   <artifactId>ptf-client-api</artifactId>
   <name>ptf-client-api</name>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>demo-0.0.1-SNAPSHOT</version>
   
   <properties>
    	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
