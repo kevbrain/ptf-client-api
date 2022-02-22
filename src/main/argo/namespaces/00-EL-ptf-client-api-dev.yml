@@ -1,0 +1,9 @@
+apiVersion: triggers.tekton.dev/v1alpha1
+kind: EventListener
+metadata:
+  name: ptf-client-api-dev-eventlistener
+  namespace: ptf-client-api-dev
+spec:
+  serviceAccountName: pipeline
+  triggers:
+    - triggerRef: ptf-client-api-dev-trigger

@@ -1,0 +1,18 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  namespace: {{ocp-namespace}}
+  name: ptf-client-api-route
+  labels:
+    app: ptf-client-api
+spec:
+  to:
+    kind: Service
+    name: ptf-client-api-service
+    weight: 256
+  port:
+    targetPort: 8080
+  tls:
+    termination: edge
+  wildcardPolicy: None
+---

@@ -1,0 +1,12 @@
+kind: Secret
+apiVersion: v1
+metadata:
+  namespace: {{ocp-namespace}}
+  name: ptf-client-api-secret-0
+  labels:
+    app: ptf-client-api    
+stringData:  
+  actuator.password: {{actuator.password}}
+type: Opaque
+---
+ 

@@ -1,0 +1,11 @@
+apiVersion: triggers.tekton.dev/v1alpha1
+kind: Trigger
+metadata:
+  name: ptf-client-api-dev-trigger
+  namespace: ptf-client-api-dev
+spec:
+  serviceAccountName: pipeline
+  bindings:
+    - ref: ptf-client-api-dev-triggerbinding
+  template:
+    ref: ptf-client-api-dev-triggertemplate
